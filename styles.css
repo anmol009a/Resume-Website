@@ -1,0 +1,175 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Global Styles */
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+ul.contact {
+    list-style: none;
+}
+
+
+/* Navigation Styles */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Active Link Style */
+nav .active {
+    background-color: #555;
+}
+
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section ul,
+section ol {
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+section a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    /* Remove border spacing between cells */
+    /* width: 100%; */
+    /* Set table width to 100% */
+}
+
+table td {
+    padding: 5px;
+    /* Add equal padding to cells for spacing */
+
+}
+
+
+.certificates-image {
+    display: none;
+    max-width: 960px;
+    width: 50vw;
+    /* Set the desired width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 2px solid #000;
+    /* Add a border around the image */
+    border-radius: 5px;
+    /* Add rounded corners to the border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Add a subtle box shadow */
+    margin-bottom: 10px;
+    /* Add some bottom margin to create spacing */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    nav p {
+        color: white;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .certificates-image {
+        display: block;
+    }
+}
