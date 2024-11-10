@@ -11,216 +11,388 @@
 <body>
     <header>
         <nav>
-            <p>Resume</p>
-            <ul class="navigation">
+            <a id="title" href="/">
+                <h1>Resume Anmol Sharma</h1>
+            </a>
+            <!-- <button type="button" id="menu" onclick="document.getElementById('navigation-list').classList.toggle('d-block'); -->
+            <button type="button" id="menu" onclick="showElement('navigation-list')">|||</button>
+            <ul id="navigation-list">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#programming-languages">Programming Languages</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
                 <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#position-of-responsibility">Position of Responsibility</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
             </ul>
-        </nav>
 
+        </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <section id="contact">
-                <h1>Anmol Sharma</h1>
+    <main class="container">
+        <section id="about">
+            <h2>About</h2>
+            <ul>
+                <li>Name: Anmol Sharma</li>
+                <li>Occupation: Student</li>
+                <li>Location: Delhi, India</li>
+                <li>
+                    Email: <a href="mailto:anmolsharma009a@gmail.com" target="_blank">anmolsharma009a@gmail.com</a>
+                </li>
+                <li>LinkdIn: <a href="https://www.linkedin.com/in/anmol-sharma-78966021a"
+                        target="_blank">anmol-sharma-78966021a</a>
+                </li>
+                <li>GitHub: <a href="https://github.com/anmol009a" target="_blank">anmol009a</a></li>
+                <!-- <li>CodeChef: https://github.com/anmol009a</li>
+                <li>HackerRank: https://github.com/anmol009a</li>
+                <li>CodingNinja: https://github.com/anmol009a</li> -->
+            </ul>
+        </section>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>Seeking a challenging position in the field of Computer Science and Engineering to leverage my
+                education, skills, and passion for programming, while actively learning from seasoned industry
+                professionals. Dedicated to acquiring practical experience and expertise in software development to
+                make meaningful contributions as a Software Developer Engineer, driving a positive impact in
+                society.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h3>Full Stack Developer And WEB ADMIN</h3>
+                <p>Myo Jewellery Private Limited | Dotcom / Internet / E-Commerce</p>
+
+                <h4>Responsibilities:</h4>
                 <ul>
-                    <li>Occupation: Student</li>
-                    <li>Email: anmolsharma009a@gmail.com</li>
+                    <li>Assist in maintaining and enhancing the Magento website.</li>
+                    <li>Support DevOps tasks for website performance.</li>
+                    <li>Handle day-to-day operations and administration.</li>
+                    <li>Automate routine tasks for process efficiency.</li>
+                    <li>Conduct data analytics for insights.</li>
                 </ul>
-            </section>
 
-            <section id="objective">
-                <h2>Objective</h2>
-                <p>Seeking a challenging position in the field of Computer Science and Engineering to leverage my
-                    education, skills, and passion for programming, while actively learning from seasoned industry
-                    professionals. Dedicated to acquiring practical experience and expertise in software development to
-                    make meaningful contributions as a Software Developer Engineer, driving a positive impact in
-                    society.</p>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2>
+                <h4>Key Skills:</h4>
                 <ul>
-                    <li>B.Tech in CSE | ADGITM | 2020 - 2024 | 9 CGPA</li>
-                    <li>XII | CBSE | Govt. Sarvodaya Vidyalaya | 2020 | 84%</li>
-                    <li>X | CBSE | B.V.M Public School | 2018 | 83%</li>
+                    <li>LAMP</li>
+                    <li>Google Analytics</li>
+                    <li>Web Scraping</li>
+                    <li>Cron</li>
                 </ul>
-            </section>
+            </article>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <ol>
-                    <li>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <article>
+                        <h3>Guyal Internal Website</h3>
                         <p>
-                            <b>Adgitm - Demo Conference Website for ADGITM College</b>
+                            February, 2024. <br>
+                            Video: <a href="video/Project Guyal Internal Website Video - Made with Clipchamp (1).mp4"
+                                target="_blank">Link</a> <br>
+                            GitHub: <a href="https://github.com/anmol009a/Resume-Website" target="_blank">Link</a>
                             <br>
-                            Link: <a href="https://adgitm.000webhostapp.com" target="_blank">[Website Link]</a>
-                            <br>
-                            GitHub: <a href="https://github.com/anmol009a/adgitm-demo-website-php"
-                                target="_blank">[GitHub Link]</a>
-                            <br>
-                            Developed using XAMPP, PHP, and Bootstrap.
+                            Developed using HTML and CSS.
                         </p>
-                    </li>
-                    <li>
-
-                        <b>WebtoonWorld - Index Website for free comics</b>
-                        <br>
-                        Link: <a href="https://freewebtoon.000webhostapp.com/" target="_blank">[Website Link]</a>
-                        <br>
-                        GitHub: <a href="https://github.com/anmol009a/webtoon-website" target="_blank">[GitHub Link]</a>
-                        <br>
-                        Developed using XAMPP, PHP, MySQL, and Bootstrap.
-                    </li>
-                    <li>
-
-                        <b>Resume Website</b>
-                        <br>
-                        Link: <a href="https://anmol009a.github.io/Resume-Website/" target="_blank">[Website Link]</a>
-                        <br>
-                        GitHub: <a href="https://github.com/anmol009a/Resume-Website" target="_blank">[GitHub Link]</a>
-                        <br>
-                        Developed using XAMPP, PHP, MySQL, and Bootstrap.
-                    </li>
-                </ol>
-            </section>
-
-            <section id="programming-languages">
-                <h2>Programming Languages</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Language</th>
-                            <th>Skill Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>JAVA</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>PHP</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>SQL</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>JS</td>
-                            <td>Beginner</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </section>
-
-            <section id="technologies">
-                <h2>Technologies</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Technology</th>
-                            <th>Skill Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Bootstrap</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>Laravel</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>TailwindCSS</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>PHPMyAdmin</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>MySQL</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>NodeJS</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>Next.JS</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>Composer</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>Git</td>
-                            <td>Beginner</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </section>
-
-            <section id="certificates">
-                <h2>Certificates</h2>
-                <ul>
-                    <li>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Resume Website</h3>
                         <p>
-                            <b>TCS iON Career Edge - Young Professional - Tata Consultancy Services</b>
+                            August, 2023. <br>
+                            Website: <a href="https://anmol009a.github.io/Resume-Website/" target="_blank">Link</a>
                             <br>
-                            Issued: Feb 2022
+                            GitHub: <a href="https://github.com/anmol009a/Resume-Website" target="_blank">Link</a>
                             <br>
+                            Developed using HTML and CSS.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>WebtoonWorld - Index Website for free comics</h3>
+                        <p>
+                            June, 2023. <br>
+                            <!-- Link: <a href="https://freewebtoon.000webhostapp.com/" target="_blank">[Website Link]</a> -->
+                            GitHub: <a href="https://github.com/anmol009a/webtoon-website" target="_blank">Link</a>
+                            <br>
+                            Video: <a href="video/webtoon world website video - Made with Clipchamp.mp4"
+                                target="_blank">Link</a> <br>
+                            Developed using PHP, MySQL, and Bootstrap.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Adgitm - Demo Conference Website for ADGITM College</h3>
+                        <p>
+                            April, 2022 <br>
+                            <!-- Link: <a href="https://adgitm.000webhostapp.com" target="_blank">[Website Link]</a>
+                        <br> -->
+                            GitHub: <a href="https://github.com/anmol009a/adgitm-demo-website-php"
+                                target="_blank">Link</a>
+                            <br>
+                            Video: <a href="video/Adgitm demo website video.mp4" target="_blank">Link</a> <br>
+                            Developed using PHP and Bootstrap.
+                        </p>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section id="skills">
+            <h2>Programming Languages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Skill Level</th>
+                        <th>Certificate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JAVA</td>
+                        <td>Beginner</td>
+                        <td><a href="img/CertificateOfCompletion_Learning Java 2018_page-0001.jpg"
+                                target="_blank">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>Intermediate</td>
+                        <td><a href="img/CertificateOfCompletion_Programming Foundations Databases_page-0001.jpg"
+                                target="_blank">Link</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Intermediate</td>
+                        <td><a href="img/CertificateOfCompletion_Learning Java 2018_page-0001.jpg"
+                                target="_blank">Link</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                        <td><a href="img/CertificateOfCompletion_HTML Essential Training_page-0001.jpg"
+                                target="_blank">Link</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>Linux & CentOS</td>
+                        <td>Beginner</td>
+                        <td><a href="img/CertificateOfCompletion_Linux CentOS 7 Overview and Installation_page-0001.jpg"
+                                target="_blank">Link</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Intermediate</td>
+                        <!-- <td><a href="img/CertificateOfCompletion_Learning Java 2018_page-0001.jpg" target="_blank">Link</a></td> -->
+
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                        <!-- <td><a href="img/CertificateOfCompletion_Learning Java 2018_page-0001.jpg" target="_blank">Link</a></td> -->
+
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td>Beginner</td>
+                        <!-- <td><a href="img/CertificateOfCompletion_Learning Java 2018_page-0001.jpg" target="_blank">Link</a></td> -->
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Skill Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Laravel</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>TailwindCSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>NodeJS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Next.JS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Composer</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech in CSE</td>
+                        <td>GGSIPU</td>
+                        <td>2020-2024</td>
+                        <td>87.8%</td>
+                    </tr>
+                    <tr>
+                        <td>XII</td>
+                        <td>Govt. Sarvodaya Vidyalaya</td>
+                        <td>2020</td>
+                        <td>84%</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>B.V.M Public School</td>
+                        <td>2018</td>
+                        <td>83%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul>
+                <li>
+                    <article>
+                        <p>
+                            <b>TCS iON Career Edge Young Professional - Tata&nbsp;Consultancy&nbsp;Services</b> <br>
+                            Issued: Feb 2022 <br>
                             Credential ID: 119854-21056586-1016
                         </p>
-                    </li>
+                        <a href="img/tcs.jpg" target="_blank">
+                            <img src="img/tcs.jpg" alt="" class="certificate-image" width="250" height="176.8">
 
-                    <a href="tcs.jpg" target="_blank"><img src="tcs.jpg" alt="" srcset="" class="certificates-image"></a>
-                    <li>
+                            <span hidden class="small-screen-only ">View Certificate</span>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
                         <p>
-                            <b>The Fundamentals of Digital Marketing - Google</b>
-                            <br>
-                            Issued: Jan 2022
-                            <br>
+                            <b>The Fundamentals of Digital Marketing - Google</b> <br>
+                            Issued: Jan 2022 <br>
                             Credential ID: AGV DWX WUF
                         </p>
-                    </li>
+                        <a href="img/google.jpg" target="_blank">
+                            <img src="img/google.jpg" alt="" class="certificate-image" width="250" height="176.8">
+                            <span hidden class="small-screen-only">View Certificate</span>
+                        </a>
+                    </article>
+                </li>
 
-                    <a href="google.jpg" target="_blank"><img src="google.jpg" alt="" srcset="" class="certificates-image"></a>
-                </ul>
-            </section>
+            </ul>
+        </section>
 
-            <section id="position-of-responsibility">
-                <h2>Position of Responsibility</h2>
-                <ul>
-                    <li>Member | NSS UMEED UNIT ADGITM (2020 - Present)</li>
-                </ul>
-            </section>
-        </div>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>
+                    Watching scientific, nutrition, self help, and news etc videos on Youtube.
+                </li>
+                <li>Reading Novels spanning multiple genres including but not limited to biography, self-help, fiction,
+                    history, pshycology, and adventure</li>
+                <li>Playing video games like Brawl Stars.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Anmol Sharma. All rights reserved.</p>
+        &copy; 2024 Anmol Sharma. All rights reserved.<wbr>
+        <a href="https://www.linkedin.com/in/anmol-sharma-78966021a" target="_blank">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn Profile" width="30" height="30">
+        </a>&nbsp;
+        <a href="https://github.com/anmol009a" target="_blank">
+            <img src="img/github.svg" alt="GitHub Profile" width="30" height="30">
+        </a>
     </footer>
+
+
+    <script>
+        function toogleNavList(element) {
+            if (element.style.display === "block") {
+                element.style.display = "none";
+                element.removeEventListener('click', toogleNavList);
+            }
+        }
+
+        // Toggle navigation list on button click
+        function showElement(id) {
+            // id.stopPropagation();
+
+            var element = document.getElementById(id);
+
+            if (element.style.display === "none" || element.style.display === "") {
+
+                element.addEventListener("click", ()=>{
+                    toogleNavList(element);
+                });
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+            console.log("hi, showElement");
+        }
+
+        // Ensure navigation list stays visible on desktop
+        window.addEventListener("resize", function () {
+            var navList = document.getElementById("navigation-list");
+            if (window.innerWidth > 768) { // Adjust 768px as needed for layout
+                navList.style.display = "";
+            }
+        });
+
+
+
+    </script>
 </body>
 
 </html>

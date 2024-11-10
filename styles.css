@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+[id] {
+    scroll-margin-top: 7rem;
+    /* Adjust this value based on your navbar height */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -18,52 +23,48 @@ body {
     background-color: #f5f5f5;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+table {
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding-right: 20px;
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    position: sticky;
+    top: 0px;
 }
-
-header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-ul.contact {
-    list-style: none;
-}
-
 
 /* Navigation Styles */
-header {
+nav {
     background-color: #333;
-    padding: 20px;
+    color: whitesmoke;
+    padding: 1rem 0 1rem 0rem;
 }
 
 nav ul {
     list-style: none;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
 nav li {
-    margin-right: 15px;
+    margin: auto;
+    padding: 5px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+nav li:hover {
     background-color: #555;
 }
 
@@ -72,6 +73,10 @@ nav .active {
     background-color: #555;
 }
 
+main {
+    max-width: 960px;
+    padding: 20px 5px 5px 20px;
+}
 
 /* Sections */
 section {
@@ -101,20 +106,6 @@ section a {
     text-decoration: none;
 }
 
-table {
-    border-collapse: collapse;
-    /* Remove border spacing between cells */
-    /* width: 100%; */
-    /* Set table width to 100% */
-}
-
-table td {
-    padding: 5px;
-    /* Add equal padding to cells for spacing */
-
-}
-
-
 .certificates-image {
     display: none;
     max-width: 960px;
@@ -136,40 +127,66 @@ table td {
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 50px;
     padding: 10px 0;
     background-color: #333;
     color: #fff;
 }
 
-footer p {
-    margin: 0;
+#menu {
+    display: none;
+}
+
+.certificate-image {
+    display: block;
+    width: 80vw;
+    height: auto;
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
-    nav ul {
-        display: none;
-    }
 
-    nav p {
-        color: white;
-        text-align: center;
-    }
-}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 480px) {
     header h1 {
-        font-size: 24px;
+        display: inline;
+        font-size: 1.1rem;
     }
 
-    section h2 {
-        font-size: 20px;
+    .small-screen-only {
+        display: inline;
     }
-}
 
-@media screen and (min-width: 960px) {
-    .certificates-image {
-        display: block;
+    #menu {
+        display: inline;
+        float: right;
+        margin-right: 1rem;
+        background-color: grey;
+        color: white;
+        padding: 0.3em 1em;
     }
+
+
+
+    #navigation-list {
+        display: none;
+        background: dimgrey;
+        color: whitesmoke;
+        width: 100vw;
+        padding: 5px 0 10px 0;
+        position: fixed;
+    }
+
+    .d-list-item {
+        display: list-item;
+    }
+
+    nav li {
+        padding: 5px 0 5px 0;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 100%;
+    }
+
+
 }
